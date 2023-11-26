@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.startGameContainer{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+.answers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trivia-item__button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background: #6060ff;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 3px solid transparent;
+  }
+
+  .buttons-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Karla;
+  }
+
+button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.correct {
+    background: rgb(99, 230, 127) !important;
+  }
+  
+  .incorrect {
+    background: #b33d3d !important;
+  }
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    margin: 10px;
+  }
+
+
+.radio-toolbar label {
+    padding: 5px 10px;
+    border-radius: 7.942px;
+    border: 0.794px solid #4D5B9E;
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  input[type="radio"]:checked+label {
+    background: rgb(18, 19, 8);
+  }
+  
+  input[name="answer"]:focus+label {
+    border: 2px dashed #444;
+  }
+  
+  .radio-toolbar label {
+    transition: all 0.3s ease;
+  }
+  
+  .radio-toolbar label:hover {
+    background-color: rgb(18, 19, 8);
+    transform: scale(1.1);
+  }
+
+  h1{
+    margin: 5px;
+  }
